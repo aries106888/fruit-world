@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>📞 Contact Fruit World</h1>
+    <p>We would love to hear from you! Share your favourite fruit, ask a question, or send us a message.</p>
+    <br>
+    <hr>
+    <a href="index.html">Home</a>
+    <a href="ourfruits.html">Our Fruit</a>
+    <a href="fruitfacts.html">Fruit Facts</a>
+    <a href="fruitrecipes.html">Fruit Recipes</a>
+    <a href="contactus.html">Contact Us</a>
+    <br>
+    <hr>
+    <h2>Get in Touch</h2>
+    <ul>
+        <li>Phone: 0712 345 678</li>
+        <li>Email: fruitworld@example.com</li>
+        <li>Location: Nairobi, Kenya</li>
+        <li>Opening Hours: Monday - Saturday</li>
+    </ul>
+    <br>
+    <h2>🍎 Tell Us About Your Favourite Fruit</h2>
+     <form id="contact-form">
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" required><br><br>
+ 
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+ 
+      <label for="fruit">Favourite Fruit:</label><br>
+      <select id="fruit" name="fruit">
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Orange">Orange</option>
+        <option value="Pineapple">Pineapple</option>
+        <option value="Strawberry">Strawberry</option>
+        <option value="Mango">Mango</option>
+      </select><br><br>
+ 
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br><br>
+ 
+      <button type="submit">Send Message</button>
+      <p id="form-status"></p>
+    </form>
+  </section>
+ 
+  <section>
+    <h2>🍓 Fruit World Feedback</h2>
+    <p>What would you like to see on our website next?</p>
+    <label><input type="checkbox" name="feedback" value="More fruit facts"> More fruit facts</label><br>
+    <label><input type="checkbox" name="feedback" value="More recipes"> More recipes</label><br>
+    <label><input type="checkbox" name="feedback" value="More fruit pictures"> More fruit pictures</label><br>
+    <label><input type="checkbox" name="feedback" value="Fruit farming information"> Fruit farming information</label>
+  </section>
+ 
+  <marquee>🍎 Thank you for visiting Fruit World! Come back soon! 🍌</marquee>
+ 
+</main>
+ 
+<footer>
+  <p>© 2026 Fruit World. All Rights Reserved.</p>
+</footer>
+ 
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('form-status').textContent = 'Thanks! Your message has been received.';
+    this.reset();
+  });
+</script>
+</body>
+</html>
